@@ -18,7 +18,18 @@ const product = {
     "../images/12.jpg",
     "../images/13.jpg",
   ],
-  colFour: ["../images/14.jpg", "../images/15.jpg", "../images/16.jpg"],
-  colFive: ["../images/9.jpg", "../images/3.jpg", "../images/11.jpg"],
+  colFour: [
+    "../images/14.jpg",
+    "../images/15.jpg",
+    "../images/2.jpg",
+    "../images/3.jpg",
+    "../images/16.jpg",
+  ],
+  colFive: [
+    "../images/9.jpg",
+    "../images/3.jpg",
+    "../images/6.jpg",
+    "../images/11.jpg",
+  ],
 };
 export default product;
