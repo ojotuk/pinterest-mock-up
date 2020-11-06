@@ -1,4 +1,4 @@
-const product = {
+export const product = {
   colOne: [
     "../images/1.jpg",
     "../images/2.jpg",
@@ -32,4 +32,11 @@ const product = {
     "../images/11.jpg",
   ],
 };
-export default product;
+export const searchPopular = [
+  { title: "Blue aesthetic wallpaper", url: "../images/pin1.png" },
+  { title: "Creative wallpaper", url: "../images/pin3.png" },
+  { title: "Phone backgrounds", url: "../images/pin2.png" },
+  { title: "Living room designs", url: "../images/pin4.png" },
+  { title: "Wave wallpaper", url: "../images/pin2.png" },
+  { title: "Neon signs", url: "../images/pin3.png" },
+];

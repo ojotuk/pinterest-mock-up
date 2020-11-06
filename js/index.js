@@ -1,7 +1,9 @@
 // import product list
-import product from "./product.js";
+import { product, searchPopular } from "./product.js";
 
 const container = document.getElementById("container"); //products containers
+const popularSearch = document.getElementById("popular-search"); //products containers search
+
 const dropMenu = document.getElementById("drop");
 const dropTrigger = document.getElementById("dropTrigger");
 const leftDropTrigger = document.getElementById("mobile-left-trigger");
@@ -38,6 +40,18 @@ productsColumns.forEach((columns) => {
 });
 // console.log(content);
 container.innerHTML = content.join("");
+
+//popular search content
+
+let search = searchPopular.map(
+  (item) => `
+              <div class="flex-content">
+                <p class="pin-title">${item.title}</p>
+                <img src=${item.url} />
+              </div>
+`
+);
+popularSearch.innerHTML = [...search].join("");
 
 dropTrigger.addEventListener("click", () => {
   dropMenu.classList.toggle("drop-open");
