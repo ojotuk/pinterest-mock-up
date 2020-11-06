@@ -9,12 +9,16 @@ const navLeft = document.getElementById("nav-left");
 
 // get the  of columns
 let productsColumns = Object.keys(product);
-// console.log(productsColumns);
-container.innerHTML = productsColumns.map(
-  (columns) => `<div class=${columns}>
-        ${product[columns].map(
-          (item) => `
-          <div class="products">
+
+//node container
+let content = [];
+
+productsColumns.forEach((columns) => {
+  //products
+  let details = [];
+  details = product[`${columns}`].map(
+    (item) =>
+      `<div class="products">
             <img src=${item} />
             <div class="description">
               <div class="contents">
@@ -27,9 +31,13 @@ container.innerHTML = productsColumns.map(
               </div>
             </div>
           </div>`
-        )}   
-  </div>`
-);
+  );
+  let productCol = `<div class=${columns}>${[...details].join("")}</div>`;
+
+  content.push(productCol);
+});
+// console.log(content);
+container.innerHTML = content.join("");
 
 dropTrigger.addEventListener("click", () => {
   dropMenu.classList.toggle("drop-open");
