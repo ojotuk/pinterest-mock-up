@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Pinterest Mock Up</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="left">
+          <i class="fa fa-pinterest"></i>
+          <span class="mobile-left" id="mobile-left-trigger"
+            ><a>Home</a><i class="fa fa-angle-down"></i
+          ></span>
+          <ul class="nav-links" id="nav-left">
+            <li class="nav-item home-nav">
+              <a>Home </a><i class="fa fa-check"></i>
+            </li>
+            <li class="nav-item"><a>Following</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <i class="fa fa-search"></i><input type="text" placeholder="search" />
+        </div>
+        <div class="right">
+          <i class="fa fa-bell"></i>
+          <i class="fa fa-comment"></i>
+          <i class="fa fa-user"></i>
+          <i class="fa fa-angle-down" id="dropTrigger"></i>
+        </div>
+        <div class="drop" id="drop">
+          <div class="drop-accounts">
+            <p>Account</p>
+            <ul>
+              <li><a>Add accounts</a></li>
+              <li><a>Unlock business tools</a></li>
+            </ul>
+          </div>
+          <div class="drop-settings">
+            <p>More settings</p>
+            <ul>
+              <li><a>Settings</a></li>
+              <li><a>Tune your home feed</a></li>
+              <li><a>Install the Windows app</a></li>
+              <li><a>Get help</a></li>
+              <li><a>See terms and privacy</a></li>
+              <li><a>log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="container"></div>
+    </main>
+    <footer></footer>
+    <!-- type=module is necessary cos of the import statement used for product list -->
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
